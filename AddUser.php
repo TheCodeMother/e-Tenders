@@ -135,5 +135,7 @@ if (!isset($_POST['AddUser'])) {
             window.location = "Index.php?action=10";
     </script>
     <?php
+    //ayth einai mia allagh
+    
 }
 ?>
