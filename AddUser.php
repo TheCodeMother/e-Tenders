@@ -18,6 +18,7 @@
                     password.focus();
                 }
 
+
             }
             if (password !== confirmPassword) {
               
