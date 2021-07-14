@@ -1,6 +1,9 @@
 <?php
 
-if (!isset($POST['addemployee'])){
+
+
+if (!isset($_POST['addemployee'])){
+    
     ?>
 <form method="post" action=""> <!-- παραμένει στην ίδια σελίδα στον κώδικα, αν δεν του βάλουμε συγκεκριμένο path -->
     <div class="form-group">
@@ -43,6 +46,10 @@ if (!isset($POST['addemployee'])){
 }
 
 else {
+   $emp= new Employee();//δημιουργώ  αντικείμενο emp της κλ.employee
+   $emp->firstname=$_POST["firstname"];//επιλέγω συγκ. πεδίο του αντικειμένου και το γεμίζω με δεδομένα που έρχονται με τη post
+   
+   
 
 }
 
